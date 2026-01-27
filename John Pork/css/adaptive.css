@@ -27,6 +27,9 @@
 		width: auto;
 		justify-content: space-between;
 	}
+	.mobile-two-jpjob-image {
+		display: none;
+	}
 }
 @media (min-width: 769px) {
 	.mobile-hero-buttons {
@@ -265,6 +268,9 @@
 		margin-top: -30px;
 		gap: 15px;
 	}
+	.meme-note {
+		right: 0px;
+	}
 	/* ===== JP.JOB SECTION ===== */
 	.jpjob-image {
 		display: none;
@@ -274,13 +280,18 @@
 	}
 	.minigame-container {
 		display: flex;
-		flex-direction: column;
+		flex-direction: column-reverse;
 	}
 	.minigame-card {
 		width: 100%;
 	}
 	.minigame-card-image {
 		width: 405px;
+	}
+
+	.mobile-two-jpjob-image {
+		display: flex;
+		justify-content: center;
 	}
 
 	.slide {
@@ -294,6 +305,7 @@
 	.hero-inner {
 		display: flex;
 		flex-direction: column-reverse;
+		gap: 32px;
 	}
 
 	.hero-content {
@@ -307,6 +319,7 @@
 	.hero-note {
 		width: 100%;
 		text-align: center;
+		margin-top: 0px;
 	}
 
 	.hero-buttons {
@@ -362,6 +375,10 @@
 		display: none;
 	}
 
+	.roadmap {
+		padding: 20px 0;
+	}
+
 	.slider-btn.right {
 		right: 0px;
 	}
@@ -383,8 +400,13 @@
 		padding: 20px 0;
 	}
 
+	.meme-inner {
+		gap: 20px;
+	}
+
 	.meme-note {
 		display: none;
+		right: -50px;
 	}
 
 	.meme-title {
@@ -427,7 +449,7 @@
 	}
 
 	.meme-card {
-		padding: 8px;
+		padding: 25px 8px;
 	}
 	.meme-card br {
 		display: inline;
