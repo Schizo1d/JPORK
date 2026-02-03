@@ -295,7 +295,7 @@
 	}
 
 	.slide {
-		align-items: center; /* КРИТИЧНО */
+		align-items: center;
 	}
 }
 @media (max-width: 768px) {
@@ -491,6 +491,9 @@
 	}
 	.jpjob-link {
 		flex-direction: row;
+	}
+	.mobile-two-jpjob-image {
+		display: none;
 	}
 	/* ===== MINI GAME ===== */
 	.minigame {
