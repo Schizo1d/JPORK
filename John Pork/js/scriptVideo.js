@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	if (!video || !playBtn || !volumeBtn) return;
 
 	const volumeIcons = {
-		mute: 'img/volume-mute.svg',
-		low: 'img/volume-low.svg',
-		medium: 'img/volume-medium.svg',
-		high: 'img/volume-high.svg',
+		mute: '../img/volume-mute.svg',
+		low: '../img/volume-low.svg',
+		medium: '../img/volume-medium.svg',
+		high: '../img/volume-high.svg',
 	};
 
 	function getVolumeIcon(volume) {

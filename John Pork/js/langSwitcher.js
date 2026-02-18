@@ -13,19 +13,19 @@ const translations = {
 		'buttons.buy': 'Buy',
 		'buttons.join': 'Join',
 		'buttons.getStickers': 'Get stickers',
-		'buttons.moreDetails': 'Soon',
+		'buttons.moreDetails': 'More details',
 		'buttons.try': 'Soon',
 
-		'roadmap.image1': 'img/roadmap-1-en.png',
-		'roadmap.image2': 'img/roadmap-2-en.png',
-		'roadmap.image3': 'img/roadmap-3-en.png',
-		'roadmap.image4': 'img/roadmap-4-en.png',
+		'roadmap.image1': '../img/roadmap-1-en.png',
+		'roadmap.image2': '../img/roadmap-2-en.png',
+		'roadmap.image3': '../img/roadmap-3-en.png',
+		'roadmap.image4': '../img/roadmap-4-en.png',
 
 		'meme.title': "Yes, this is a meme.<br> And no — it's not a joke.",
 		'meme.text': `The power of a meme isn't in pump-and-dump schemes, but in community building; a good meme is first and foremost about fun and narrative.<br><br>If people find it funny and interesting, they believe and engage, which is why John Pork is an attempt to create such a narrative from scratch — not around an influencer, media personality, or affiliated group, but by the community and for the community!`,
 		'meme.subtext': 'Add Telegram stickers to support our currency and community.',
-		'meme.sticker-note': 'img/sticker-note-en.png',
-		'meme.mobile-sticker-note': 'img/mobile-sticker-note-en.png',
+		'meme.sticker-note': '../img/sticker-note-en.png',
+		'meme.mobile-sticker-note': '../img/mobile-sticker-note-en.png',
 
 		'jpjob.title': 'Is John Pork just a memecoin?',
 		'jpjob.text1':
@@ -35,7 +35,7 @@ const translations = {
 		'jpjob.text3':
 			"Our goal is to unite talents and simplify finding a team or work in TON, removing barriers thanks to interaction and payment through Telegram and TON. We're creating the foundation for the future of work in Telegram and Web3.",
 
-		'game.lead': 'Remember these guys? We do too <img src="img/smirking-face.svg" alt="">',
+		'game.lead': 'Remember these guys? We do too <img src="../img/smirking-face.svg" alt="">',
 		'game.text1':
 			"It's time to have some fun and help our John kick the crap out of them, in the good sense of crypto-memes!",
 		'game.text2':
@@ -63,19 +63,19 @@ const translations = {
 		'buttons.buy': 'Купить',
 		'buttons.join': 'Присоединиться',
 		'buttons.getStickers': 'Получить стикеры',
-		'buttons.moreDetails': 'Скоро',
+		'buttons.moreDetails': 'Подробнее',
 		'buttons.try': 'Скоро',
 
-		'roadmap.image1': 'img/roadmap-1-ru.png',
-		'roadmap.image2': 'img/roadmap-2-ru.png',
-		'roadmap.image3': 'img/roadmap-3-ru.png',
-		'roadmap.image4': 'img/roadmap-4-ru.png',
+		'roadmap.image1': '../img/roadmap-1-ru.png',
+		'roadmap.image2': '../img/roadmap-2-ru.png',
+		'roadmap.image3': '../img/roadmap-3-ru.png',
+		'roadmap.image4': '../img/roadmap-4-ru.png',
 
 		'meme.title': 'Да, это мем.<br> И нет — это не шутка.',
 		'meme.text': `Сила мема не в биржевой накачке, а в формировании комьюнити, хороший мем это в первую очередь веселье и нарратив.<br><br>Если людям смешно и интересно значит люди верят и обмениваются, поэтому John Pork это попытка создать такой нарратив с чистого листа не вокруг инфлюенсера, медийной личности или группы аффилированных лиц, а от комьюнити и для комьюнити!`,
 		'meme.subtext': 'Добавить стикеры Telegram чтобы поддержать нашу валюту и комьюнити.',
-		'meme.sticker-note': 'img/sticker-note-ru.png',
-		'meme.mobile-sticker-note': 'img/mobile-sticker-note-ru.png',
+		'meme.sticker-note': '../img/sticker-note-ru.png',
+		'meme.mobile-sticker-note': '../img/mobile-sticker-note-ru.png',
 
 		'jpjob.title': 'John Pork — это просто мемкоин?',
 		'jpjob.text1':
@@ -85,7 +85,7 @@ const translations = {
 		'jpjob.text3':
 			'Наша цель — объединить таланты и упростить поиск команды или работы в TON, убрав барьеры благодаря взаимодействию и оплате через Telegram и TON. Мы создаем основу для будущего работы в Telegram и Web3.',
 
-		'game.lead': 'А помните этих ребят? Мы тоже <img src="img/smirking-face.svg" alt="">',
+		'game.lead': 'А помните этих ребят? Мы тоже <img src="../img/smirking-face.svg" alt="">',
 		'game.text1':
 			'Пришло время немного повеселиться и помочь нашему Джону выбить из них всё дерьмо, в хорошем смысле крипто-мемов!',
 		'game.text2':
@@ -277,19 +277,19 @@ class LanguageManager {
 
 	updateButtonImage() {
 		if (this.currentLang === 'en') {
-			this.langIcon.src = 'img/langRu.svg';
+			this.langIcon.src = '../img/langRu.svg';
 			this.langIcon.alt = 'Switch to Russian';
 
 			if (this.mobileLangIcon) {
-				this.mobileLangIcon.src = 'img/langRu.svg';
+				this.mobileLangIcon.src = '../img/langRu.svg';
 				this.mobileLangIcon.alt = 'Switch to Russian';
 			}
 		} else {
-			this.langIcon.src = 'img/langEng.svg';
+			this.langIcon.src = '../img/langEng.svg';
 			this.langIcon.alt = 'Switch to English';
 
 			if (this.mobileLangIcon) {
-				this.mobileLangIcon.src = 'img/langEng.svg';
+				this.mobileLangIcon.src = '../img/langEng.svg';
 				this.mobileLangIcon.alt = 'Switch to English';
 			}
 		}

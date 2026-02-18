@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+  <title>$JPORK</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/adaptive.css">
+  <link rel="stylesheet" href="../css/langSwitcher.css">
+  <link rel="stylesheet" href="../css/burgerMenu.css">
+  <script src="../js/scriptVideo.js" defer></script>
+  <script src="../js/stickyHeader.js" defer></script>
+  <script src="../js/langSwitcher.js" defer></script>
+  <script src="../js/bugerMenu.js" defer></script>
+  <script src="../js/slider.js" defer></script>
+  <script src="../js/tgs-upload.js" defer></script>
+  <script src="https://unpkg.com/lottie-web@5.12.2/build/player/lottie.min.js" defer></script>
+
+</head>
+
+<body>
+
+  <div class="language-loader" id="languageLoader">
+    <div class="loader-content">
+      <div class="loader-image-container">
+        <div class="loader-image-shadow"></div>
+        <img src="../img/coin.png" alt="Loading" class="loader-image">
+      </div>
+      <p class="loader-text" data-key="loader.text">Switching language...</p>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container mobile-flex">
+      <div class="logo">
+        <a href="/"><img src="../img/JohnPorkLogo.svg" alt="Logo"></a>
+      </div>
+
+      <nav class="nav">
+        <a href="#about" data-key="nav.about">About project</a>
+        <a href="#roadmap" data-key="nav.roadmap">Development</a>
+        <a href="#meme" data-key="nav.stickers">Stickers</a>
+        <a href="#jpjob">JP.job</a>
+        <a href="#game" data-key="nav.game">Our game</a>
+      </nav>
+
+      <div class="header-right">
+        <a href="https://x.com/johnporkonton" target="_blank" class="icon">
+          <img src="../img/Twitter.svg" alt="twitter">
+        </a>
+        <a href="https://t.me/johnporkonton" target="_blank" class="icon">
+          <img src="../img/telegram.svg" alt="telegram">
+        </a>
+        <a href="#" class="lang" id="langSwitcher">
+          <img src="../img/langRu.svg" alt="Switch to Russian" id="langIcon">
+        </a>
+      </div>
+
+      <button class="burger" id="burgerBtn">
+        <img src="../img/burger-menu.svg" alt="">
+      </button>
+
+    </div>
+  </header>
+
+  <section class="hero" id="about">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <div class="hero-title">
+          <img src="../img/coin.png" alt="" class="hero-coin">
+          <h1>$JOHN PORK</h1>
+        </div>
+
+        <p class="hero-subtitle" data-key="hero.subtitle">
+          Yes, this is a meme.<br> And no — it's not a joke.
+        </p>
+
+        <p class="hero-text" data-key="hero.text">
+          Yes, this is a meme. And no — it's not a joke. John Pork is the entry point to a community
+          that goes beyond Telegram and doesn't live by others' rules.
+          <br><br>
+          This landing page isn't about selling, promised Xs, or quick hype.
+          It's a digital bridge between memes, crypto, and people who understand
+          why they're here.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="https://app.ston.fi/swap?ft=TON&tt=EQDSr2mJDp65GhHU3M_QCyk6T3mHQ864bBIi4ujlhJZQZOMz&chartVisible=true&chartInterval=1w"
+            class="btn btn-fill" data-key="buttons.buy" target="_blank">Buy</a>
+          <a href="https://t.me/johnporkonton" target="_blank" class="btn btn-outline">
+            <span data-key="buttons.join">Join</span>
+            <img src="../img/telegram.svg" alt="">
+          </a>
+        </div>
+
+        <p class="hero-note" data-key="hero.note">
+          Yes, this is a meme. And no — it's not a joke. John Pork is the entry point to a community
+          that goes beyond Telegram and doesn't live by others' rules.
+        </p>
+      </div>
+
+      <div class="hero-video">
+        <video id="heroVideo" class="hero-video-player" src="../video/hero-video.mp4" poster="../img/video-preview.jpg"
+          playsinline preload="auto" muted>
+        </video>
+        <div class="video-play-btn" id="videoPlayBtn">
+          <img src="../img/Play.svg" alt="">
+        </div>
+
+        <button class="video-volume-btn" id="volumeBtn">
+          <img src="../img/volume-mute.svg" alt="Sound" class="volume-icon">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mobile-hero-buttons">
+    <a href="https://app.ston.fi/swap?ft=TON&tt=EQDSr2mJDp65GhHU3M_QCyk6T3mHQ864bBIi4ujlhJZQZOMz&chartVisible=true&chartInterval=1w"
+      class="btn btn-fill" data-key="buttons.buy" target="_blank">Buy</a>
+    <a href="https://t.me/johnporkonton" target="_blank" class="btn btn-outline">
+      <span data-key="buttons.join">Join</span>
+      <img src="../img/telegram.svg" alt="">
+    </a>
+
+    <p class="hero-note" data-key="hero.note">
+      Yes, this is a meme. And no — it's not a joke. John Pork is the entry point to a community
+      that goes beyond Telegram and doesn't live by others' rules.
+    </p>
+  </section>
+
+  <section class="roadmap" id="roadmap">
+    <div class="container roadmap-container">
+      <div class="roadmap-list">
+        <div class="roadmap-item">
+          <div class="roadmap-bg">
+            <img src="../img/roadmap-shadow-1.png" alt="">
+          </div>
+          <img src="../img/roadmap-1-en.png" alt="" data-key="roadmap.image1" data-en="../img/roadmap-1-en.png"
+            data-ru="../img/roadmap-1-ru.png">
+        </div>
+
+        <div class="roadmap-item">
+          <div class="roadmap-bg">
+            <img src="../img/roadmap-shadow-2.png" alt="">
+          </div>
+          <img src="../img/roadmap-2-en.png" alt="" data-key="roadmap.image2" data-en="../img/roadmap-2-en.png"
+            data-ru="../img/roadmap-2-ru.png">
+        </div>
+
+        <div class="roadmap-item">
+          <div class="roadmap-bg">
+            <img src="../img/roadmap-shadow-3.png" alt="">
+          </div>
+          <img src="../img/roadmap-3-en.png" alt="" data-key="roadmap.image3" data-en="../img/roadmap-3-en.png"
+            data-ru="../img/roadmap-3-ru.png">
+        </div>
+
+        <div class="roadmap-item">
+          <div class="roadmap-bg">
+            <img src="../img/roadmap-shadow-4.png" alt="">
+          </div>
+          <img src="../img/roadmap-4-en.png" alt="" data-key="roadmap.image4" data-en="../img/roadmap-4-en.png"
+            data-ru="../img/roadmap-4-ru.png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="meme" id="meme">
+    <div class="container meme-container">
+      <div class="meme-title">
+        <h1>$MEME POWER</h1>
+      </div>
+
+      <div class="meme-inner">
+        <div class="meme-card">
+          <div class="meme-title-mobile">
+            <h1>$MEME POWER</h1>
+            <img class="mobile-coin" src="../img/mobile-coin.png" alt="Coin">
+          </div>
+          <h3 data-key="meme.title">Yes, this is a meme.<br> And no — it's not a joke.</h3>
+
+          <p data-key="meme.text">
+            The power of a meme isn't in pump-and-dump schemes, but in community building; a good meme is first and
+            foremost about fun and narrative.
+            <br><br>
+            If people find it funny and interesting, they believe and engage, which is why John Pork is an attempt to
+            create such a narrative from scratch — not around an influencer, media personality, or affiliated group, but
+            by the community and for the community!
+          </p>
+
+          <img src="../img/sticker-note-en.png" data-key="meme.sticker-note" class="meme-note" alt="">
+        </div>
+
+        <div class="meme-slider">
+          <button class="slider-btn left"><img src="../img/vector-left.png" alt=""></button>
+          <div class="slider-window">
+            <div class="slider-track">
+              <div class="slide">
+                <div class="tgs-player" data-src="../img/pig1.json"></div>
+              </div>
+              <div class="slide">
+                <div class="tgs-player" data-src="../img/pig2.json"></div>
+              </div>
+              <div class="slide">
+                <div class="tgs-player" data-src="../img/pig3.json"></div>
+              </div>
+              <div class="slide">
+                <div class="tgs-player" data-src="../img/pig4.json"></div>
+              </div>
+              <div class="slide">
+                <div class="tgs-player" data-src="../img/pig5.json"></div>
+              </div>
+              <div class="slide">
+                <div class="tgs-player" data-src="../img/pig6.json"></div>
+              </div>
+              <div class="slide">
+                <div class="tgs-player" data-src="../img/pig7.json"></div>
+              </div>
+            </div>
+          </div>
+          <button class="slider-btn right"><img src="../img/vector-right.png" alt=""></button>
+
+          <a href="https://t.me/johnporkonton" class="btn btn-fill meme-btn" data-key="buttons.getStickers"
+            target="_blank">Get
+            stickers</a>
+          <p class="meme-sub" data-key="meme.subtext">
+            Add Telegram stickers to support our currency and community.
+          </p>
+        </div>
+        <img class="mobile-sticker-note" src="../img/mobile-sticker-note-en.png" data-key="meme.mobile-sticker-note"
+          alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="jpjob" id="jpjob">
+    <div class="container jpjob-container">
+      <div class="jpjob-image">
+        <img src="../img/jpjob-preview.png" alt="JP.job preview">
+      </div>
+
+      <div class="jpjob-content">
+        <img src="../img/jpjob-logo.svg" alt="JP.job" class="jpjob-logo">
+        <h3 data-key="jpjob.title">Is John Pork just a memecoin?</h3>
+
+        <p data-key="jpjob.text1">
+          No! It's the core of a future freelance platform inside Telegram on the TON blockchain.
+          <b>$JPORK</b> is the main platform token for payments, ensuring scarcity and value growth.
+        </p>
+
+        <p data-key="jpjob.text2">
+          Freelancers (developers, designers, SMM) get access to projects and instant payments
+          in $TON / $JPORK. Projects quickly find verified specialists and collaborate
+          securely through smart contracts.
+        </p>
+
+        <p data-key="jpjob.text3">
+          Our goal is to unite talents and simplify finding a team or work in TON,
+          removing barriers thanks to interaction and payment through Telegram and TON.
+          We're creating the foundation for the future of work in Telegram and Web3.
+        </p>
+        <div class="mobile-jpjob-image">
+          <img src="../img/jpjob-preview.png" alt="JP.job preview">
+        </div>
+        <div class="jbjob-container-link">
+          <a class="btn btn-fill" href="architecture.html" data-key="buttons.moreDetails">
+            More details</a>
+          <p class="jpjob-link">
+            <span data-key="footer.follow">Follow for updates:</span>
+            <a href="https://t.me/johntelepork" target="_blank">t.me/johntelepork</a>
+          </p>
+        </div>
+        <div class="mobile-two-jpjob-image">
+          <img src="../img/jpjob-preview.png" alt="JP.job preview">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="mobile-minigame-image">
+    <img src="../img/mobile-minigame-preview.png" alt="John Pork Mini Game">
+  </div>
+
+  <section class="minigame" id="game">
+    <div class="container minigame-container">
+
+      <div class="minigame-image">
+        <img src="../img/minigame-preview.png" alt="John Pork Mini Game">
+      </div>
+
+      <div class="minigame-card">
+        <div class="minigame-title">
+          <h1>MINI GAME</h1>
+        </div>
+        <p class="minigame-lead" data-key="game.lead">
+          Remember these guys? We do too <img src="../img/smirking-face.svg" alt="">
+        </p>
+
+        <p data-key="game.text1">
+          It's time to have some fun and help our John kick the crap out of them,
+          in the good sense of crypto-memes!
+        </p>
+
+        <p data-key="game.text2">
+          The most active, creative, and fierce participants of this hunt will receive
+          solid rewards from the team. Ready to shake off the boredom?
+          <span class="minigame-date">Start Q2 2026</span>
+        </p>
+
+        <a href="" class="btn btn-fill minigame-btn">
+          <span data-key="buttons.try">Soon</span>
+          <span class="play-icon">▶</span>
+        </a>
+        <img src="../img/minigame-sketch.svg" alt="" class="minigame-card-image" />
+      </div>
+      <a href="" class="btn btn-fill mobile-minigame-btn">
+        <span data-key="buttons.try">Try it out</span>
+        <span class="play-icon"><img src="../img/button-play.svg" alt="Play"></span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="footer-logo">$JOHN PORK</div>
+
+        <div class="footer-row">
+          <nav class="footer-nav">
+            <a href="https://tonviewer.com/EQCDbdvSdsaT3wwYs52VGUYVo6xfC3EnBo--kcxLGmi8eBl-" data-key="footer.wallet"
+              target="_blank">Public wallet</a>
+            <a href="https://tonviewer.com/EQDZjaR-tZdGKlytrrNo0e-rdT4eZqLwJ4xPuLqh1xl2IAf-" data-key="footer.buyback"
+              target="_blank">Buyback wallet</a>
+            <a href="https://tonraffles.app/lock/EQDSr2mJDp65GhHU3M_QCyk6T3mHQ864bBIi4ujlhJZQZOMz"
+              data-key="footer.lock" target="_blank">Token lock</a>
+          </nav>
+
+          <div class="footer-socials">
+            <a href="https://x.com/i/communities/2008891533714465082" target="_blank" class="footer-icon">
+              <img src="../img/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://t.me/johnporkonton" target="_blank" class="footer-icon">
+              <img src="../img/telegram.svg" alt="Telegram">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <button class="mobile-close" id="mobileClose"><img src="../img/Cross.svg" alt=""></button>
+      <div class="logo">
+        <img src="../img/JohnPorkLogo.svg" alt="Logo">
+      </div>
+    </div>
+    <nav class="mobile-nav">
+      <a href="#about" data-key="nav.about">About project</a>
+      <a href="#roadmap" data-key="nav.roadmap">Development</a>
+      <a href="#meme" data-key="nav.stickers">Stickers</a>
+      <a href="#jpjob">JP.job</a>
+      <a href="#game" data-key="nav.game">Our game</a>
+    </nav>
+
+    <div class="mobile-links">
+      <a href="https://tonviewer.com/EQCDbdvSdsaT3wwYs52VGUYVo6xfC3EnBo--kcxLGmi8eBl-" data-key="footer.wallet"
+        target="_blank">Public wallet</a>
+      <a href="https://tonviewer.com/EQDZjaR-tZdGKlytrrNo0e-rdT4eZqLwJ4xPuLqh1xl2IAf-" data-key="footer.buyback"
+        target="_blank">Buyback wallet</a>
+      <a href="https://tonraffles.app/lock/EQDSr2mJDp65GhHU3M_QCyk6T3mHQ864bBIi4ujlhJZQZOMz" data-key="footer.lock"
+        target="_blank">Token lock</a>
+    </div>
+
+    <div class="mobile-footer">
+      <a href="https://x.com/johnporkonton" target="_blank">
+        <img src="../img/twitter.svg" alt="">
+      </a>
+      <a href="https://t.me/johnporkonton" target="_blank">
+        <img src="../img/telegram.svg" alt="">
+      </a>
+      <a href="#" class="lang mobile-lang-switcher">
+        <img src="../img/langRu.svg" alt="Switch to Russian" class="mobile-lang-icon">
+      </a>
+    </div>
+  </div>
+
+</body>
+
+</html>

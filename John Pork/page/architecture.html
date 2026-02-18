@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+  <title>$JPORK</title>
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/architecture.css">
+  <link rel="stylesheet" href="../css/langSwitcher.css">
+  <link rel="stylesheet" href="../css/burgerMenu.css">
+  <script src="../js/stickyHeader.js" defer></script>
+  <script src="../js/langSwitcher.js" defer></script>
+  <script src="../js/bugerMenu.js" defer></script>
+</head>
+
+<body>
+
+  <div class="language-loader" id="languageLoader">
+    <div class="loader-content">
+      <div class="loader-image-container">
+        <div class="loader-image-shadow"></div>
+        <img src="../img/coin.png" alt="Loading" class="loader-image">
+      </div>
+      <p class="loader-text" data-key="loader.text">Switching language...</p>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container mobile-flex">
+      <div class="logo">
+        <a href="/"><img src="../img/JohnPorkLogo.svg" alt="Logo"></a>
+      </div>
+
+      <nav class="nav">
+        <a href="#about" data-key="nav.about">About project</a>
+        <a href="#roadmap" data-key="nav.roadmap">Development</a>
+        <a href="#meme" data-key="nav.stickers">Stickers</a>
+        <a href="#jpjob">JP.job</a>
+        <a href="#game" data-key="nav.game">Our game</a>
+      </nav>
+
+      <div class="header-right">
+        <a href="https://x.com/johnporkonton" target="_blank" class="icon">
+          <img src="../img/Twitter.svg" alt="twitter">
+        </a>
+        <a href="https://t.me/johnporkonton" target="_blank" class="icon">
+          <img src="../img/telegram.svg" alt="telegram">
+        </a>
+        <a href="#" class="lang" id="langSwitcher">
+          <img src="../img/langRu.svg" alt="Switch to Russian" id="langIcon">
+        </a>
+      </div>
+
+      <button class="burger" id="burgerBtn">
+        <img src="../img/burger-menu.svg" alt="">
+      </button>
+
+    </div>
+  </header>
+
+  <section class="jpjob">
+    <div class="container jpjob-container">
+      <div class="jpjob-main">
+        <div class="jpjob-text">
+          <div class="jpjob-title">
+            <img src="../img/coin.png" alt="" class="jpjob-coin">
+            <img src="../img/jp.job-architecture.svg" alt="">
+          </div>
+          <h3>Фриланс платформа</h3>
+          <p>
+            Наша платформа построена как саморегулируемая система, где каждое действие пользователя встроено в общую
+            логику. Все процессы автоматизированы, прозрачны и направлены на поддержание баланса между участниками.
+          </p>
+          <br>
+          <p>
+            Архитектура адаптируется к спросу и нагрузке без ручного вмешательства, превращая сервис в устойчивую
+            цифровую инфраструктуру, а не просто набор функций.
+          </p>
+        </div>
+
+        <div class="jpjob-image">
+          <img src="../img/jbjob-pig.png" alt="Pig">
+        </div>
+      </div>
+
+      <div class="jpjob-cards">
+        <div class="jpjob-card">
+          <img src="../img/Fire.png" alt="">
+          <div class="jpjob-card-text">
+            <h4>Дефляционная механика</h4>
+            <p>Постоянное уменьшение supply через авто сжигание (80%)
+            </p>
+          </div>
+        </div>
+
+        <div class="jpjob-card">
+          <img src="../img/Storage.png" alt="">
+          <div class="jpjob-card-text">
+            <h4>Фонд стабилизации</h4>
+            <p>20% в cold storage + TON fees как буфер против volatility</p>
+          </div>
+        </div>
+
+        <div class="jpjob-card">
+          <img src="../img/Pig-coin.png" alt="">
+          <div class="jpjob-card-text">
+            <h4>Авто маркет-мейкинг</h4>
+            <p>Контракт покупает JPORK при падении цены</p>
+          </div>
+        </div>
+
+        <div class="jpjob-card">
+          <img src="../img/Ton.png" alt="">
+          <div class="jpjob-card-text">
+            <h4>Двухвалютная система</h4>
+            <p>Unit of account (TON) vs Medium of exchange (JPORK)
+            </p>
+          </div>
+        </div>
+
+        <div class="jpjob-card">
+          <img src="../img/Leaf.png" alt="">
+          <div class="jpjob-card-text">
+            <h4>Циклическая экономика</h4>
+            <p>Токены не застаиваются: часть сжигается, часть рециркулирует</p>
+          </div>
+        </div>
+
+        <a href="https://t.me/johnporkonton" target="_blank">
+          <div class="jpjob-card pink-card">
+            <img src="../img/Telegram.png" alt="">
+            <div class="jpjob-card-text">
+              <h4>Следите за новостями!</h4>
+              <p>Переходите в наш telegram
+                канал</p>
+            </div>
+            <img src="../img/vector-right.svg" alt="">
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="jpjob-flow">
+    <div class="container jpjob-flow-container">
+      <h2 class="flow-title">Базовый цикл сделки:</h2>
+
+      <div class="flow-wrapper">
+        <!-- Левый персонаж -->
+        <div class="flow-user left">
+          <img src="../img/pigX.png" alt="">
+          <div class="flow-label">Пользователь X<br>(Заказчик)</div>
+        </div>
+
+        <!-- Центральные шаги -->
+        <div class="flow-steps">
+          <div class="flow-step">
+            <div class="step-num">1</div>
+            <div class="step-text">
+              <span class="step-title">X Публикует проект</span>
+              <span class="step-description">Стоимость: (N JPORK)</span>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="step-num">2</div>
+            <div class="step-text">
+              <span class="step-title">Y откликается</span>
+              <span class="step-description">Плата за отклик</span>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="step-num">3</div>
+            <div class="step-text">
+              <span class="step-title">Смарт-контракт</span>
+              <span class="step-description">автоматическое
+                распределение N JPORK</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Правый персонаж -->
+        <div class="flow-user right">
+          <img src="../img/pigY.png" alt="">
+          <div class="flow-label">Пользователь Y<br>(Соискатель)</div>
+        </div>
+
+        <!-- Линия -->
+        <div class="flow-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="jpjob-economy">
+    <div class="container jpjob-economy-container">
+      <h2 class="economy-title">Архитектура экономики:</h2>
+
+      <div class="economy-grid">
+        <div class="economy-card">
+          <div class="economy-img">
+            <img src="../img/fire-big.png" alt="">
+          </div>
+          <h3>Механизм распределения платежей</h3>
+          <p>Сжигание + резерв</p>
+        </div>
+
+        <div class="economy-card">
+          <div class="economy-img">
+            <img src="../img/diamond-big.png" alt="">
+          </div>
+          <h3>Стабилизационный механизм</h3>
+          <p>TON Fee → JPORK</p>
+        </div>
+
+        <div class="economy-card">
+          <div class="economy-img">
+            <img src="../img/ton-big.png" alt="">
+          </div>
+          <h3>Двухвалютная оценка</h3>
+          <p>JPORK ⇄ TON</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="model-effects">
+    <div class="container model-effects-container">
+
+      <h2 class="effects-title">Экономические эффекты модели:</h2>
+
+      <div class="effects-list">
+
+        <div class="effect-card">
+          <div class="effect-image">
+            <img src="../img/pig-effect1.png" alt="">
+          </div>
+          <div class="effect-text">
+            <h3>Для держателей JPORK:</h3>
+            <p><strong>Дефляция:</strong> Постоянное сокращение предложения ведёт к росту цены при том же спросе</p>
+            <p><strong>Стабильность:</strong> Встроенные механизмы защиты от обвалов</p>
+            <p><strong>Utility:</strong> Токен нужен для любых операций на платформе</p>
+          </div>
+        </div>
+
+        <div class="effect-card">
+          <div class="effect-image">
+            <img src="../img/pig-effect2.png" alt="">
+          </div>
+          <div class="effect-text">
+            <h3>Для пользователей платформы:</h3>
+            <p><strong>Предсказуемость:</strong> Цены в TON понятны и стабильны</p>
+            <p><strong>Простота:</strong> Оплата в один клик в JPORK</p>
+            <p><strong>Безопасность:</strong> Смарт-контракты гарантируют честное распределение</p>
+          </div>
+        </div>
+
+        <div class="effect-card">
+          <div class="effect-image">
+            <img src="../img/pig-effect3.png" alt="">
+          </div>
+          <div class="effect-text">
+            <h3>Для экосистемы TON:</h3>
+            <p><strong>Увеличение транзакций:</strong> Каждое действие генерирует TON fees</p>
+            <p><strong>Рост utility:</strong> TON становится мерилом стоимости</p>
+            <p><strong>Сетевой эффект:</strong> Рост JP.job привлекает новых пользователей</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="breakthrough">
+    <div class="container breakthrough-container">
+
+      <div class="breakthrough-left">
+
+        <h2 class="breakthrough-title">
+          ПРОРЫВНАЯ<br>МОДЕЛЬ
+        </h2>
+
+        <div class="breakthrough-grid">
+
+          <div class="breakthrough-item">
+            <h4>Равновесная экономика</h4>
+            <p>сжигание + стабилизация + ликвидность</p>
+          </div>
+
+          <div class="breakthrough-item">
+            <h4>Защита интересов всех сторон</h4>
+            <p>пользователей, держателей, экосистемы</p>
+          </div>
+
+          <div class="breakthrough-item">
+            <h4>Элегантная связка</h4>
+            <p>с экосистемой <strong>TON</strong> без потери суверенитета <strong>JPORK</strong></p>
+          </div>
+
+          <div class="breakthrough-item">
+            <h4>Двойная ценность</h4>
+            <p>утилитарная (платформа) + инвестиционная (дефляция)</p>
+          </div>
+
+        </div>
+
+        <p class="breakthrough-note">
+          По сути, вы создаёте не просто платформу, а автономную экономическую систему с встроенными стабилизаторами —
+          это уровень DeFi 2.0 в рамках отдельного продукта.
+        </p>
+
+      </div>
+
+      <div class="breakthrough-right">
+        <img src="../img/pig-breakthrough.png" alt="JPORK">
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="footer-logo">$JOHN PORK</div>
+
+        <div class="footer-row">
+          <nav class="footer-nav">
+            <a href="https://tonviewer.com/EQCDbdvSdsaT3wwYs52VGUYVo6xfC3EnBo--kcxLGmi8eBl-" data-key="footer.wallet"
+              target="_blank">Public wallet</a>
+            <a href="https://tonviewer.com/EQDZjaR-tZdGKlytrrNo0e-rdT4eZqLwJ4xPuLqh1xl2IAf-" data-key="footer.buyback"
+              target="_blank">Buyback wallet</a>
+            <a href="https://tonraffles.app/lock/EQDSr2mJDp65GhHU3M_QCyk6T3mHQ864bBIi4ujlhJZQZOMz"
+              data-key="footer.lock" target="_blank">Token lock</a>
+          </nav>
+
+          <div class="footer-socials">
+            <a href="https://x.com/i/communities/2008891533714465082" target="_blank" class="footer-icon">
+              <img src="../img/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://t.me/johnporkonton" target="_blank" class="footer-icon">
+              <img src="../img/telegram.svg" alt="Telegram">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <button class="mobile-close" id="mobileClose"><img src="../img/Cross.svg" alt=""></button>
+      <div class="logo">
+        <img src="../img/JohnPorkLogo.svg" alt="Logo">
+      </div>
+    </div>
+    <nav class="mobile-nav">
+      <a href="#about" data-key="nav.about">About project</a>
+      <a href="#roadmap" data-key="nav.roadmap">Development</a>
+      <a href="#meme" data-key="nav.stickers">Stickers</a>
+      <a href="#jpjob">JP.job</a>
+      <a href="#game" data-key="nav.game">Our game</a>
+    </nav>
+
+    <div class="mobile-links">
+      <a href="https://tonviewer.com/EQCDbdvSdsaT3wwYs52VGUYVo6xfC3EnBo--kcxLGmi8eBl-" data-key="footer.wallet"
+        target="_blank">Public wallet</a>
+      <a href="https://tonviewer.com/EQDZjaR-tZdGKlytrrNo0e-rdT4eZqLwJ4xPuLqh1xl2IAf-" data-key="footer.buyback"
+        target="_blank">Buyback wallet</a>
+      <a href="https://tonraffles.app/lock/EQDSr2mJDp65GhHU3M_QCyk6T3mHQ864bBIi4ujlhJZQZOMz" data-key="footer.lock"
+        target="_blank">Token lock</a>
+    </div>
+
+    <div class="mobile-footer">
+      <a href="https://x.com/johnporkonton" target="_blank">
+        <img src="../img/twitter.svg" alt="">
+      </a>
+      <a href="https://t.me/johnporkonton" target="_blank">
+        <img src="../img/telegram.svg" alt="">
+      </a>
+      <a href="#" class="lang mobile-lang-switcher">
+        <img src="../img/langRu.svg" alt="Switch to Russian" class="mobile-lang-icon">
+      </a>
+    </div>
+  </div>
+
+</body>
+
+</html>

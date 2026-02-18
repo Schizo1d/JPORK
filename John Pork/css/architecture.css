@@ -1,0 +1,450 @@
+@font-face {
+	font-family: 'Hezaedrus-Regular';
+	src: url('../fonts/Hezaedrus-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Hezaedrus-Bold';
+	src: url('../fonts/Hezaedrus-Bold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Hezaedrus-Medium';
+	src: url('../fonts/Hezaedrus-Medium.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Hezaedrus-Light';
+	src: url('../fonts/Hezaedrus-Light.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'gogono-cocoa';
+	src: url('../fonts/gogono-cocoa-mochi-cyrillic.otf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Hezaedrus-Regular, sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: #fff;
+}
+
+section {
+	scroll-margin-top: 90px;
+}
+
+.container {
+	max-width: 1260px;
+	margin: 0 auto;
+	padding: 0 20px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.jpjob {
+	padding: 40px 0;
+}
+.jpjob-container {
+	display: flex;
+	flex-direction: column;
+}
+.jpjob-main {
+	background:
+		radial-gradient(circle at left center, #ffe4f0 0%, transparent 60%),
+		radial-gradient(circle at right center, #ffe4f0 0%, transparent 60%),
+		linear-gradient(180deg, #ffffff, #fff);
+
+	border-radius: 24px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	overflow: hidden;
+}
+
+.jpjob-title {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding-left: 70px;
+}
+
+.jpjob-title h1 {
+	font-family: 'gogono-cocoa';
+	font-size: 96px;
+	color: #ff4e9b;
+	position: relative;
+	z-index: 1;
+}
+
+.jpjob-coin {
+	position: absolute;
+	left: 0px;
+	z-index: 2;
+	width: 95px;
+	height: 90px;
+}
+.jpjob-text {
+	padding: 20px;
+	width: 100%;
+}
+.jpjob-text h3 {
+	font-size: 32px;
+	margin: 10px 0;
+	font-family: 'Hezaedrus-Medium';
+	font-weight: normal;
+}
+
+.jpjob-text p {
+	max-width: 660px;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+.jpjob-image img {
+}
+
+/* Карточки */
+
+.jpjob-cards {
+	margin-top: 30px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 12px;
+	width: 100%;
+}
+
+.jpjob-card {
+	background: #fff;
+	border-radius: 16px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+	font-size: 16px;
+	display: flex;
+	width: 100%;
+}
+
+.jpjob-card-text {
+	padding: 12px 0px 12px 0px;
+}
+.jpjob-card-text p {
+	max-width: 258px;
+}
+.jpjob-card h4 {
+	margin: 0px 0 5px;
+	font-size: 20px;
+	font-family: 'Hezaedrus-Medium';
+	font-weight: normal;
+}
+.jpjob-cards a {
+	text-decoration: none;
+}
+.pink-card {
+	background: #ff4e9b;
+	color: #fff;
+}
+
+/*Цикл сделки*/
+.jpjob-flow {
+	padding: 40px 0;
+	text-align: center;
+}
+
+.jpjob-flow-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.flow-title {
+	font-size: 32px;
+	margin-bottom: 15px;
+}
+
+.flow-wrapper {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flow-user {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 4px;
+}
+
+.flow-user img {
+}
+
+.flow-label {
+	margin-top: -26px;
+	background: #ffb6d5;
+	padding: 14px 28px;
+	border-radius: 40px;
+	font-weight: 600;
+	width: 292px;
+	z-index: 2;
+	font-size: 24px;
+}
+
+.flow-steps {
+	display: flex;
+	flex-direction: column;
+	gap: 21px;
+	z-index: 2;
+}
+
+.flow-step {
+	background: #ffa7cd;
+	border-radius: 24px;
+	padding: 16px 20px;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	min-width: 420px;
+	border: 6px dashed #ff4e9b;
+}
+
+.step-num {
+	font-family: 'gogono-cocoa';
+	font-size: 96px;
+	font-weight: 800;
+	color: #ff4e9b;
+}
+
+.step-text {
+	text-align: center;
+	width: 66%;
+}
+
+.step-description {
+	font-size: 16px;
+	color: #222222;
+}
+
+.step-title {
+	display: block;
+	font-size: 24px;
+	font-family: 'Hezaedrus-Medium';
+}
+
+.flow-line {
+	position: absolute;
+	top: 81%;
+	left: 235px;
+	right: 235px;
+	height: 32px;
+	background: #ffb6d5;
+	z-index: 1;
+}
+
+/*JBJOB-экономика*/
+.jpjob-economy {
+	padding: 40px 0;
+	text-align: center;
+}
+.jpjob-economy-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.economy-title {
+	font-size: 32px;
+	margin-bottom: 15px;
+}
+
+.economy-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 12px;
+	width: 100%;
+}
+
+.economy-card {
+	background: #fff;
+	border-radius: 24px;
+	padding: 60px 40px;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.economy-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+}
+
+.economy-img {
+	display: flex;
+	height: 200px;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.economy-img img {
+}
+
+.economy-card h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+	width: 265px;
+}
+
+.economy-card p {
+	color: #666;
+	font-size: 14px;
+}
+
+/*Модель эффектов*/
+
+.model-effects {
+	padding: 80px 0;
+	background: #ffffff;
+}
+.model-effects-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.effects-title {
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 40px;
+	font-weight: 700;
+}
+
+.effects-list {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	width: 85%;
+}
+
+.effect-card {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	background: #ffffff;
+	border-radius: 24px;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+	overflow: hidden;
+}
+
+.effect-image {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.effect-image::before {
+	content: '';
+	position: absolute;
+	width: 390px;
+	height: 110px;
+	background: radial-gradient(
+		circle,
+		rgba(255, 0, 169, 0.45) 0%,
+		rgba(255, 0, 140, 0.25) 40%,
+		rgba(255, 0, 140, 0.12) 90%,
+		transparent 100%
+	);
+	filter: blur(65px);
+	z-index: 0;
+	bottom: 0;
+}
+
+.effect-image img {
+	position: relative;
+	z-index: 1;
+}
+
+.effect-text h3 {
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+
+.effect-text p {
+	margin: 6px 0;
+	color: #475569;
+	line-height: 1.5;
+	width: 490px;
+}
+.effect-card:nth-child(3) .effect-text p:first-of-type {
+	width: 500px;
+}
+
+/*Прорывная модель*/
+.breakthrough {
+	padding: 40px 0;
+	background: #ffffff;
+}
+
+.breakthrough-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 60px;
+}
+
+.breakthrough-left {
+	max-width: 560px;
+}
+
+.breakthrough-title {
+	font-size: 96px;
+	line-height: 0.9;
+	color: #ff3b9a;
+	font-weight: 900;
+	margin-bottom: 40px;
+	letter-spacing: 2px;
+	font-family: 'gogono-cocoa';
+}
+
+.breakthrough-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px 40px;
+	margin-bottom: 30px;
+}
+
+.breakthrough-item h4 {
+	font-size: 24px;
+	font-family: 'Hezaedrus-Bold';
+	margin-bottom: 6px;
+}
+
+.breakthrough-item p {
+	color: #475569;
+	font-size: 16px;
+}
+
+.breakthrough-note {
+	margin-top: 20px;
+	color: #334155;
+	font-style: italic;
+	line-height: 1.6;
+}
+
+.breakthrough-right img {
+	max-width: 100%;
+}
