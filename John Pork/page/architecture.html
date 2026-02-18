@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/architecture.css">
+  <link rel="stylesheet" href="../css/architecture_adaptive.css">
   <link rel="stylesheet" href="../css/langSwitcher.css">
   <link rel="stylesheet" href="../css/burgerMenu.css">
   <script src="../js/stickyHeader.js" defer></script>
@@ -37,15 +38,15 @@
   <header class="header">
     <div class="container mobile-flex">
       <div class="logo">
-        <a href="/"><img src="../img/JohnPorkLogo.svg" alt="Logo"></a>
+        <a href="index.html"><img src="../img/JohnPorkLogo.svg" alt="Logo"></a>
       </div>
 
       <nav class="nav">
-        <a href="#about" data-key="nav.about">About project</a>
-        <a href="#roadmap" data-key="nav.roadmap">Development</a>
-        <a href="#meme" data-key="nav.stickers">Stickers</a>
-        <a href="#jpjob">JP.job</a>
-        <a href="#game" data-key="nav.game">Our game</a>
+        <a href="index.html#about" data-key="nav.about">About project</a>
+        <a href="index.html#roadmap" data-key="nav.roadmap">Development</a>
+        <a href="index.html#meme" data-key="nav.stickers">Stickers</a>
+        <a href="index.html#jpjob">JP.job</a>
+        <a href="index.html#game" data-key="nav.game">Our game</a>
       </nav>
 
       <div class="header-right">
@@ -69,21 +70,27 @@
 
   <section class="jpjob">
     <div class="container jpjob-container">
+      <div class="jpjob-mobile-img-two">
+        <img src="../img/jbjob-pig.png" alt="Pig">
+      </div>
+      <div class="jpjob-mobile-img">
+        <img src="../img/jbjob-pig-mobile.png" alt="Pig">
+      </div>
       <div class="jpjob-main">
         <div class="jpjob-text">
           <div class="jpjob-title">
             <img src="../img/coin.png" alt="" class="jpjob-coin">
-            <img src="../img/jp.job-architecture.svg" alt="">
+            <img class="jbjob-mobile-title-img" src="../img/jp.job-architecture.svg" alt="">
           </div>
-          <h3>Фриланс платформа</h3>
-          <p>
-            Наша платформа построена как саморегулируемая система, где каждое действие пользователя встроено в общую
-            логику. Все процессы автоматизированы, прозрачны и направлены на поддержание баланса между участниками.
+          <h3 data-key="jpjob.page.subtitle">Freelance platform</h3>
+          <p data-key="jpjob.page.description1">
+            Our platform is built as a self-regulating system where every user action is embedded in the overall logic.
+            All processes are automated, transparent, and aimed at maintaining balance between participants.
           </p>
           <br>
-          <p>
-            Архитектура адаптируется к спросу и нагрузке без ручного вмешательства, превращая сервис в устойчивую
-            цифровую инфраструктуру, а не просто набор функций.
+          <p data-key="jpjob.page.description2">
+            The architecture adapts to demand and load without manual intervention, turning the service into a
+            sustainable digital infrastructure, not just a set of functions.
           </p>
         </div>
 
@@ -96,42 +103,40 @@
         <div class="jpjob-card">
           <img src="../img/Fire.png" alt="">
           <div class="jpjob-card-text">
-            <h4>Дефляционная механика</h4>
-            <p>Постоянное уменьшение supply через авто сжигание (80%)
-            </p>
+            <h4 data-key="jpjob.card1.title">Deflationary mechanics</h4>
+            <p data-key="jpjob.card1.desc">Constant supply reduction through auto-burning (80%)</p>
           </div>
         </div>
 
         <div class="jpjob-card">
           <img src="../img/Storage.png" alt="">
           <div class="jpjob-card-text">
-            <h4>Фонд стабилизации</h4>
-            <p>20% в cold storage + TON fees как буфер против volatility</p>
+            <h4 data-key="jpjob.card2.title">Stabilization fund</h4>
+            <p data-key="jpjob.card2.desc">20% in cold storage + TON fees as a buffer against volatility</p>
           </div>
         </div>
 
         <div class="jpjob-card">
           <img src="../img/Pig-coin.png" alt="">
           <div class="jpjob-card-text">
-            <h4>Авто маркет-мейкинг</h4>
-            <p>Контракт покупает JPORK при падении цены</p>
+            <h4 data-key="jpjob.card3.title">Auto market-making</h4>
+            <p data-key="jpjob.card3.desc">Contract buys JPORK when price falls</p>
           </div>
         </div>
 
         <div class="jpjob-card">
           <img src="../img/Ton.png" alt="">
           <div class="jpjob-card-text">
-            <h4>Двухвалютная система</h4>
-            <p>Unit of account (TON) vs Medium of exchange (JPORK)
-            </p>
+            <h4 data-key="jpjob.card4.title">Dual-currency system</h4>
+            <p data-key="jpjob.card4.desc">Unit of account (TON) vs Medium of exchange (JPORK)</p>
           </div>
         </div>
 
         <div class="jpjob-card">
           <img src="../img/Leaf.png" alt="">
           <div class="jpjob-card-text">
-            <h4>Циклическая экономика</h4>
-            <p>Токены не застаиваются: часть сжигается, часть рециркулирует</p>
+            <h4 data-key="jpjob.card5.title">Cyclic economy</h4>
+            <p data-key="jpjob.card5.desc">Tokens don't stagnate: part burns, part recycles</p>
           </div>
         </div>
 
@@ -139,9 +144,8 @@
           <div class="jpjob-card pink-card">
             <img src="../img/Telegram.png" alt="">
             <div class="jpjob-card-text">
-              <h4>Следите за новостями!</h4>
-              <p>Переходите в наш telegram
-                канал</p>
+              <h4 data-key="jpjob.card6.title">Follow the news!</h4>
+              <p data-key="jpjob.card6.desc">Go to our telegram channel</p>
             </div>
             <img src="../img/vector-right.svg" alt="">
           </div>
@@ -152,50 +156,46 @@
 
   <section class="jpjob-flow">
     <div class="container jpjob-flow-container">
-      <h2 class="flow-title">Базовый цикл сделки:</h2>
+      <h2 class="flow-title" data-key="flow.title">Basic transaction cycle:</h2>
 
       <div class="flow-wrapper">
-        <!-- Левый персонаж -->
+
         <div class="flow-user left">
           <img src="../img/pigX.png" alt="">
-          <div class="flow-label">Пользователь X<br>(Заказчик)</div>
+          <div class="flow-label" data-key="flow.userX">User X<br>(Client)</div>
         </div>
 
-        <!-- Центральные шаги -->
         <div class="flow-steps">
           <div class="flow-step">
             <div class="step-num">1</div>
             <div class="step-text">
-              <span class="step-title">X Публикует проект</span>
-              <span class="step-description">Стоимость: (N JPORK)</span>
+              <span class="step-title" data-key="flow.step1.title">X Publishes a project</span>
+              <span class="step-description" data-key="flow.step1.desc">Cost: (N JPORK)</span>
             </div>
           </div>
 
           <div class="flow-step">
             <div class="step-num">2</div>
             <div class="step-text">
-              <span class="step-title">Y откликается</span>
-              <span class="step-description">Плата за отклик</span>
+              <span class="step-title" data-key="flow.step2.title">Y responds</span>
+              <span class="step-description" data-key="flow.step2.desc">Response fee</span>
             </div>
           </div>
 
           <div class="flow-step">
             <div class="step-num">3</div>
             <div class="step-text">
-              <span class="step-title">Смарт-контракт</span>
-              <span class="step-description">автоматическое
-                распределение N JPORK</span>
+              <span class="step-title" data-key="flow.step3.title">Smart contract</span>
+              <span class="step-description" data-key="flow.step3.desc">automatic distribution of N JPORK</span>
             </div>
           </div>
         </div>
 
-        <!-- Правый персонаж -->
         <div class="flow-user right">
           <img src="../img/pigY.png" alt="">
-          <div class="flow-label">Пользователь Y<br>(Соискатель)</div>
+          <div class="flow-label" data-key="flow.userY">User Y<br>(Applicant)</div>
         </div>
 
-        <!-- Линия -->
         <div class="flow-line"></div>
       </div>
     </div>
@@ -203,31 +203,85 @@
 
   <section class="jpjob-economy">
     <div class="container jpjob-economy-container">
-      <h2 class="economy-title">Архитектура экономики:</h2>
+      <h2 class="economy-title" data-key="economy.title">Economy architecture:</h2>
 
       <div class="economy-grid">
         <div class="economy-card">
-          <div class="economy-img">
-            <img src="../img/fire-big.png" alt="">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="economy-img">
+                <img src="../img/fire-big.png" alt="Fire">
+              </div>
+              <h3 data-key="economy.card1.title">Payment distribution mechanism</h3>
+              <p data-key="economy.card1.sub">Burning + reserve</p>
+            </div>
+
+            <div class="card-back">
+              <h4 data-key="economy.card1.back.title1">Step 1:<br> Payment decomposition</h4>
+              <p data-key="economy.card1.back.text1">N (100% JPORK) = N1 (80%) + N2 (20%)</p>
+              <div class="back-content">
+                <h4 data-key="economy.card1.back.title2">Step 2:<br> Fate of each part:</h4>
+                <p data-key="economy.card1.back.text2">N1 (80%) → <strong>Burn address</strong><br>Tokens are destroyed
+                  forever → total supply decreases → creates deflationary pressure.</p>
+                <p data-key="economy.card1.back.text3">N2 (20%) → <strong>Cold Storage</strong> Reserve for market
+                  stabilization. Sold ONLY when demand is abnormally high → smoothes price spikes.</p>
+              </div>
+            </div>
           </div>
-          <h3>Механизм распределения платежей</h3>
-          <p>Сжигание + резерв</p>
         </div>
 
         <div class="economy-card">
-          <div class="economy-img">
-            <img src="../img/diamond-big.png" alt="">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="economy-img">
+                <img src="../img/diamond-big.png" alt="Diamond">
+              </div>
+              <h3 data-key="economy.card2.title">Stabilization mechanism</h3>
+              <p data-key="economy.card2.sub">TON Fee → JPORK</p>
+            </div>
+            <div class="card-back">
+              <h4 data-key="economy.card2.back.title">How TON commissions work:</h4>
+              <p data-key="economy.card2.back.text1">N (100% JPORK) = N1 (80%) + N2 (20%)</p>
+              <div class="back-content">
+                <h4 data-key="economy.card2.back.title2">Logic:</h4>
+                <p data-key="economy.card2.back.text2"><strong>1.</strong> All network <strong>TON</strong> commissions
+                  (gas) accumulate in a special insurance fund.</p>
+                <p data-key="economy.card2.back.text3"><strong>2.</strong> In case of sharp volatility
+                  (<strong>JPORK</strong> price drop > set threshold) the smart contract automatically:</p>
+                <p data-key="economy.card2.back.text4">Buys JPORK for accumulated TON<br>Supports the price by adding
+                  liquidity<br>This is a built-in market-maker against panic sales.</p>
+              </div>
+            </div>
           </div>
-          <h3>Стабилизационный механизм</h3>
-          <p>TON Fee → JPORK</p>
         </div>
 
         <div class="economy-card">
-          <div class="economy-img">
-            <img src="../img/ton-big.png" alt="">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="economy-img">
+                <img src="../img/ton-big.png" alt="TON">
+              </div>
+              <h3 data-key="economy.card3.title">Dual-currency valuation</h3>
+              <p data-key="economy.card3.sub">JPORK ⇄ TON</p>
+            </div>
+            <div class="card-back">
+              <h4 data-key="economy.card3.back.title">Key innovation:</h4>
+              <p data-key="economy.card3.back.text1"># All calculations <strong>INSIDE</strong> the system — in
+                <strong>JPORK</strong><br># All <strong>VALUATIONS</strong> — in <strong>TON</strong>
+              </p>
+              <div class="back-content">
+                <h4 data-key="economy.card3.back.title2">Advantages:</h4>
+                <p data-key="economy.card3.back.text2">For users: Understanding the real cost in stable currency
+                  <strong>(TON)</strong>
+                </p>
+                <p data-key="economy.card3.back.text3">For the ecosystem: All internal payments — in native token
+                  <strong>JPORK</strong>
+                </p>
+                <p data-key="economy.card3.back.text4">Volatility protection: Exchange rate reference only for
+                  valuation, not for payments</p>
+              </div>
+            </div>
           </div>
-          <h3>Двухвалютная оценка</h3>
-          <p>JPORK ⇄ TON</p>
         </div>
       </div>
     </div>
@@ -236,43 +290,55 @@
   <section class="model-effects">
     <div class="container model-effects-container">
 
-      <h2 class="effects-title">Экономические эффекты модели:</h2>
+      <h2 class="effects-title" data-key="effects.title">Economic effects of the model:</h2>
 
       <div class="effects-list">
 
+        <div class="effect-image-mobile">
+          <img src="../img/pig-effect1.png" alt="">
+        </div>
         <div class="effect-card">
           <div class="effect-image">
             <img src="../img/pig-effect1.png" alt="">
           </div>
           <div class="effect-text">
-            <h3>Для держателей JPORK:</h3>
-            <p><strong>Дефляция:</strong> Постоянное сокращение предложения ведёт к росту цены при том же спросе</p>
-            <p><strong>Стабильность:</strong> Встроенные механизмы защиты от обвалов</p>
-            <p><strong>Utility:</strong> Токен нужен для любых операций на платформе</p>
+            <h3 data-key="effects.card1.title">For JPORK holders:</h3>
+            <p data-key="effects.card1.text1"><strong>Deflation:</strong> Constant supply reduction leads to price
+              growth with the same demand</p>
+            <p data-key="effects.card1.text2"><strong>Stability:</strong> Built-in mechanisms against crashes</p>
+            <p data-key="effects.card1.text3"><strong>Utility:</strong> Token is needed for any operations on the
+              platform</p>
           </div>
         </div>
 
+        <div class="effect-image-mobile">
+          <img src="../img/pig-effect2.png" alt="">
+        </div>
         <div class="effect-card">
           <div class="effect-image">
             <img src="../img/pig-effect2.png" alt="">
           </div>
           <div class="effect-text">
-            <h3>Для пользователей платформы:</h3>
-            <p><strong>Предсказуемость:</strong> Цены в TON понятны и стабильны</p>
-            <p><strong>Простота:</strong> Оплата в один клик в JPORK</p>
-            <p><strong>Безопасность:</strong> Смарт-контракты гарантируют честное распределение</p>
+            <h3 data-key="effects.card2.title">For platform users:</h3>
+            <p data-key="effects.card2.text1"><strong>Predictability:</strong> Prices in TON are clear and stable</p>
+            <p data-key="effects.card2.text2"><strong>Simplicity:</strong> One-click payment in JPORK</p>
+            <p data-key="effects.card2.text3"><strong>Security:</strong> Smart contracts guarantee fair distribution</p>
           </div>
         </div>
 
+        <div class="effect-image-mobile">
+          <img src="../img/pig-effect3.png" alt="">
+        </div>
         <div class="effect-card">
           <div class="effect-image">
             <img src="../img/pig-effect3.png" alt="">
           </div>
           <div class="effect-text">
-            <h3>Для экосистемы TON:</h3>
-            <p><strong>Увеличение транзакций:</strong> Каждое действие генерирует TON fees</p>
-            <p><strong>Рост utility:</strong> TON становится мерилом стоимости</p>
-            <p><strong>Сетевой эффект:</strong> Рост JP.job привлекает новых пользователей</p>
+            <h3 data-key="effects.card3.title">For the TON ecosystem:</h3>
+            <p data-key="effects.card3.text1"><strong>Increased transactions:</strong> Every action generates TON fees
+            </p>
+            <p data-key="effects.card3.text2"><strong>Utility growth:</strong> TON becomes a measure of value</p>
+            <p data-key="effects.card3.text3"><strong>Network effect:</strong> Growth of JP.job attracts new users</p>
           </div>
         </div>
 
@@ -285,37 +351,43 @@
 
       <div class="breakthrough-left">
 
-        <h2 class="breakthrough-title">
-          ПРОРЫВНАЯ<br>МОДЕЛЬ
+        <h2 class="breakthrough-title" data-key="breakthrough.title">
+          BREAKTHROUGH<br>MODEL
         </h2>
 
         <div class="breakthrough-grid">
 
           <div class="breakthrough-item">
-            <h4>Равновесная экономика</h4>
-            <p>сжигание + стабилизация + ликвидность</p>
+            <h4 data-key="breakthrough.item1.title">Balanced economy</h4>
+            <p data-key="breakthrough.item1.desc">burning + stabilization + liquidity</p>
           </div>
 
           <div class="breakthrough-item">
-            <h4>Защита интересов всех сторон</h4>
-            <p>пользователей, держателей, экосистемы</p>
+            <h4 data-key="breakthrough.item2.title">Protection of all parties' interests</h4>
+            <p data-key="breakthrough.item2.desc">users, holders, ecosystem</p>
           </div>
 
           <div class="breakthrough-item">
-            <h4>Элегантная связка</h4>
-            <p>с экосистемой <strong>TON</strong> без потери суверенитета <strong>JPORK</strong></p>
+            <h4 data-key="breakthrough.item3.title">Elegant connection</h4>
+            <p data-key="breakthrough.item3.desc">with the <strong>TON</strong> ecosystem without losing
+              <strong>JPORK</strong> sovereignty
+            </p>
           </div>
 
           <div class="breakthrough-item">
-            <h4>Двойная ценность</h4>
-            <p>утилитарная (платформа) + инвестиционная (дефляция)</p>
+            <h4 data-key="breakthrough.item4.title">Double value</h4>
+            <p data-key="breakthrough.item4.desc">utilitarian (platform) + investment (deflation)</p>
           </div>
 
         </div>
 
-        <p class="breakthrough-note">
-          По сути, вы создаёте не просто платформу, а автономную экономическую систему с встроенными стабилизаторами —
-          это уровень DeFi 2.0 в рамках отдельного продукта.
+        <div class="breakthrough-right-mobile">
+          <img src="../img/pig-breakthrough.png" alt="JPORK">
+        </div>
+
+        <p class="breakthrough-note" data-key="breakthrough.note">
+          In essence, you are creating not just a platform, but an autonomous economic system with built-in stabilizers
+          — this is DeFi 2.0 level within a separate product.
         </p>
 
       </div>

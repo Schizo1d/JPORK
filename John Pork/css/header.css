@@ -80,8 +80,8 @@
 .lang {
 	padding: 0px;
 }
-[data-key] b,
+/* [data-key] b,
 [data-key] strong {
 	color: #ff4e9b;
 	font-family: 'Hezaedrus-Bold';
-}
+} */

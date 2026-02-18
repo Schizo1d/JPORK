@@ -1,0 +1,217 @@
+@media (max-width: 1280px) {
+	.container {
+		max-width: 768px;
+	}
+}
+@media (max-width: 768px) {
+	.container {
+		max-width: 390px;
+	}
+}
+@media (min-width: 1281px) {
+	.jpjob-mobile-img-two {
+		display: none;
+	}
+	.effect-image {
+		display: flex;
+	}
+	.effect-image-mobile {
+		display: none;
+	}
+}
+@media (max-width: 1280px) {
+	.jpjob-mobile-img-two {
+		display: block;
+	}
+	.jpjob-image {
+		display: none;
+	}
+	.jpjob-cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.jpjob-card-text p {
+		max-width: 256px;
+	}
+
+	.flow-wrapper {
+		flex-direction: column;
+	}
+
+	.flow-steps {
+		margin-top: 24px;
+	}
+
+	.flow-step {
+		min-width: 0;
+		width: 360px;
+	}
+
+	.flow-line {
+		top: 30%;
+		left: 46%;
+		right: 0px;
+		height: 850px;
+		width: 30px;
+	}
+	.right {
+		z-index: 2;
+	}
+	.flow-user img {
+		width: 360px;
+	}
+
+	.economy-grid {
+		grid-template-columns: repeat(1, 1fr);
+		justify-items: center;
+	}
+
+	.economy-card {
+		width: 65%;
+	}
+
+	.effect-image {
+		display: none;
+	}
+	.effects-title {
+		font-size: 24px;
+	}
+	.effect-card {
+		padding: 8px 16px;
+		width: 100%;
+		z-index: 2;
+	}
+	.effects-list {
+		width: 100%;
+	}
+	.effect-text p {
+		width: auto;
+	}
+	.effect-card:nth-child(3) .effect-text p:first-of-type {
+		width: auto;
+	}
+
+	.effect-image-mobile {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: -30px;
+	}
+
+	.effect-image-mobile::before {
+		content: '';
+		position: absolute;
+		width: 390px;
+		height: 110px;
+		background: radial-gradient(
+			circle,
+			rgba(255, 0, 169, 0.45) 0%,
+			rgba(255, 0, 140, 0.25) 40%,
+			rgba(255, 0, 140, 0.12) 90%,
+			transparent 100%
+		);
+		filter: blur(65px);
+		z-index: 0;
+		bottom: 0;
+	}
+
+	.effect-image-mobile img {
+		position: relative;
+		z-index: 1;
+		width: auto;
+	}
+
+	.breakthrough-container {
+		flex-direction: column;
+	}
+}
+@media (min-width: 768px) {
+	.jpjob-mobile-img {
+		display: none;
+	}
+
+	.breakthrough-right-mobile {
+		display: none;
+	}
+}
+@media (max-width: 768px) {
+	.jpjob-mobile-img-two {
+		display: none;
+	}
+
+	.jpjob-mobile-img {
+		margin-bottom: -125px;
+		display: block;
+	}
+	.jpjob-text h3 {
+		font-size: 24px;
+		margin-top: 45px;
+	}
+	.jpjob-coin {
+		width: 148px;
+		height: 140px;
+		top: 0px;
+	}
+	.jpjob-text {
+		padding: 16px 8px;
+	}
+	.jpjob-title {
+		padding-left: 115px;
+	}
+	.jbjob-mobile-title-img {
+		margin-top: 30px;
+	}
+	.jpjob-cards {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.jpjob-cards img {
+		width: 90px;
+		height: 100%;
+	}
+	.jpjob-card {
+		align-items: center;
+	}
+	.jpjob-card.pink-card img:nth-child(3) {
+		top: 0px;
+		width: 10px;
+	}
+
+	.effect-image-mobile img {
+		width: 360px;
+	}
+
+	.economy-card {
+		width: 100%;
+	}
+
+	.breakthrough-container {
+		flex-direction: row;
+	}
+
+	.breakthrough-title {
+		font-size: 51px;
+		text-align: center;
+	}
+	.breakthrough-grid {
+		grid-template-columns: 1fr;
+	}
+	.breakthrough-right-mobile {
+		display: block;
+	}
+	.breakthrough-right-mobile img {
+		width: 360px;
+	}
+	.breakthrough-left {
+		text-align: center;
+	}
+}
+@media (max-width: 768px) {
+	.economy-card.flipped .card-inner {
+		transform: rotateY(180deg);
+	}
+
+	.economy-card {
+		-webkit-tap-highlight-color: transparent;
+		user-select: none;
+	}
+}
